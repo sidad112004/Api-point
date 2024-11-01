@@ -1,33 +1,45 @@
-# Free API Generator
+# 📡 Free API Generator
 
-**Free API Generator** is a powerful API hub designed for frontend developers who need easy access to a variety of APIs. Users can browse through pre-existing APIs for common data types or create custom APIs by defining their own fields. The platform also includes a searchable directory of external API resources, such as weather and news APIs, simplifying the API discovery process.
+![API Generator Logo](https://via.placeholder.com/600x200.png?text=Free+API+Generator) <!-- Replace with your logo or relevant image -->
 
-## Features
+**Free API Generator** is a powerful API hub designed for frontend developers who need easy access to a variety of APIs. Users can either browse through pre-existing APIs for common data types or create custom APIs by defining their own fields. Additionally, the platform includes a searchable directory of external API resources, such as weather and news APIs, making it easier for developers to find the data they need without leaving the hub.
 
-- **API Library**: Access pre-built APIs for a range of common data types.
-- **Custom API Generation**: Create and customize your own APIs by defining custom fields.
-- **External API Links**: Quickly find links to external API providers for weather, finance, and more.
-- **Intuitive UI**: A user-friendly interface for easy navigation and API discovery.
+---
 
-## Tech Stack
+## 🎥 Demo Video
+
+[![Watch the Demo](https://img.youtube.com/vi/oyZoZaDrcbI/maxresdefault.jpg)](https://youtu.be/oyZoZaDrcbI?si=9FjQPXjKttGgLwT6)
+
+---
+
+## 🚀 Features
+
+- **API Library**: Access a collection of pre-built APIs for various data types.
+- **Custom API Generation**: Create and customize your own APIs by defining fields.
+- **External API Links**: Find links to various external API providers for seamless integration.
+- **User-Friendly Interface**: Designed to enhance the API discovery experience.
+
+---
+
+## ⚙️ Tech Stack
 
 - **Frontend**: [Next.js](https://nextjs.org/) - A powerful framework for server-rendered and static web applications.
 - **Database**: [PostgreSQL](https://www.postgresql.org/) - A robust relational database for efficient data management.
-- **ORM**: [Prisma](https://www.prisma.io/) - A modern ORM for seamless database management with Next.js.
+- **ORM**: [Prisma](https://www.prisma.io/) - A modern ORM for seamless database interactions.
 
-## Getting Started
+---
 
-Follow these steps to set up the project locally:
+## 📚 Getting Started
 
 ### Prerequisites
 
-Ensure you have the following installed on your system:
+Make sure you have the following installed on your system:
 
 - **Node.js** (v14 or higher)
 - **PostgreSQL** (v12 or higher)
 - **Prisma CLI** (install via `npm install prisma --save-dev` if not already installed)
 
-### Installation
+### Installation Steps
 
 1. **Clone the Repository**
 
@@ -44,21 +56,19 @@ Ensure you have the following installed on your system:
 
 3. **Set Up Environment Variables**
 
-    Create a `.env` file in the root directory with the following environment variables to configure your database, authentication, and application URLs:
+    Create a `.env` file in the root directory with the following configuration:
 
     ```plaintext
-    DATABASE_URL=your_database_url
+    DATABASE_URL=postgresql://username:password@localhost:5432/yourdatabase
     NEXTAUTH_SECRET=your_nextauth_secret
     NEXTAUTH_URL=http://localhost:3000
     NEXT_PUBLIC_BASE_URL=http://localhost:3000
     NODE_ENV=production
     ```
 
-    - Replace `your_database_url` and `your_nextauth_secret` with your actual database credentials and authentication secret.
-
 4. **Migrate the Database**
 
-    Run Prisma migration to set up your database schema:
+    Run the Prisma migration to set up your database schema:
 
     ```bash
     npx prisma migrate dev --name init
@@ -66,7 +76,7 @@ Ensure you have the following installed on your system:
 
 5. **Seed the Database (Optional)**
 
-    If you have initial data to seed, run:
+    If you have initial data to seed, execute:
 
     ```bash
     npx prisma db seed
@@ -78,9 +88,11 @@ Ensure you have the following installed on your system:
     npm run dev
     ```
 
-    The app will be accessible at `http://localhost:3000`.
+    Your app will be available at `http://localhost:3000`.
 
-### Building for Production
+---
+
+## 🔧 Building for Production
 
 To build and start the application in production mode, use:
 
